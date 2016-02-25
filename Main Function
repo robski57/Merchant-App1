@@ -1,0 +1,34 @@
+welcome = ("Welcome to Robert's Sports app")
+print(welcome)
+
+aList = ['HAT $19, SWEATER $32, SHIRT $27, JACKET $50']
+print(aList)
+
+def main():
+#constants, this will become a list   
+    HAT = 19 
+    SWEATER = 32
+    SHIRT = 27
+    JACKETS = 50
+    TAX_RATE = 0.20
+    
+       
+#input item
+    itemName = str(input("Please make a selection from our list of items:"))
+    print(itemName)
+#input price
+    itemPrice =float(input("Price:"))
+    print(itemPrice)
+#input how many
+    itemCount = int(input("How many:"))
+
+#muiltly itemPrice * itmeCount
+    itemCombine = float(itemPrice) * int(itemCount)
+    print(itemCombine)
+
+    
+    tax = itemCombine * TAX_RATE               
+    total = tax + itemCombine               
+    print("Todays total comes to", total)                
+
+main()
